@@ -33,6 +33,8 @@ void loadImage3()
         // STUDENT TASK : Prevent image 7 from being displayed
 
         // display image
+        if (it - 2 == imgList.begin())
+            continue;
         cv::imshow(windowName, *it);
         cv::waitKey(0); // wait for keyboard input before continuing
     }
